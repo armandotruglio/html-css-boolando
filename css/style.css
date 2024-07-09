@@ -100,14 +100,42 @@ a{
 
 .tag.discount{
     background-color: red;
-    position: absolute;
-    left: 0;
-    bottom: 20px;
+    position: relative;
+    top: -50px;
 } 
 
 .tag.sustain{
     background-color: green;
-    position: absolute;
-    left: 35px;
-    bottom: 20px;
+    position: relative;
+    top: -50px;
+}
+
+.description{
+    color: black;
+}
+
+.tag + .description{
+    margin-top: -20px;
+}
+
+.brand{
+    font-size: xx-small;
+    font-style: normal;
+}
+
+.product-title{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.discount-price{
+    color: red;
+    font-weight: bold;
+    font-size: small;
+}
+
+.standard-price{
+    text-decoration: line-through;
+    font-size: small;
 }

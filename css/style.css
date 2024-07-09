@@ -121,6 +121,10 @@ footer{
     padding: 6px;
 }
 
+.card:hover::after{
+    color: red;
+}
+
 .standard-img:hover{
     opacity: 0;
 }

@@ -1,0 +1,64 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background-color: #ff6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body{
+    padding-top: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+}
+
+/*Utils*/
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.navbar{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 25px;
+}
+
+/*Main*/
+
+.row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col{
+    flex-basis: calc(100%/3 - 40px/3);
+}
+
+.card img{
+    width: 100%;
+}

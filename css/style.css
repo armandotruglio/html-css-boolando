@@ -8,18 +8,20 @@
 /* Generics */
 body{
     font-family: sans-serif;
+    color: white;
 }
 
 header{
     background-color: #ff6900;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
 }
 
 body{
-    padding-top: 50px;
+    padding-top: 75px;
 }
 
 a{
@@ -59,6 +61,53 @@ a{
     flex-basis: calc(100%/3 - 40px/3);
 }
 
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
 .card img{
     width: 100%;
+}
+
+.hover-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card::after{
+    content: '\2665';
+    font-size: 22px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: black;
+    background-color: white;
+    padding: 6px;
+}
+
+.standard-img:hover{
+    opacity: 0;
+}
+
+.tag{
+    padding: 5px;
+    font-size: x-small;
+    font-weight: bold;
+}
+
+.tag.discount{
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+} 
+
+.tag.sustain{
+    background-color: green;
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
 }

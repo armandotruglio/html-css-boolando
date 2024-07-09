@@ -28,6 +28,8 @@ a{
     text-decoration: none;
     color: white;
     margin-right: 5px;
+    font-size: small;
+    font-weight: bold;
 }
 
 /*Utils*/
@@ -40,12 +42,30 @@ a{
 .navbar{
     padding: 5px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+.customer-type{
+    flex-basis: 20%;
+}
+
+.logo{
+    flex-basis: 60%;
+    text-align: center;
+}
+
+.icons{
+    flex-basis: 20%;
+    text-align: end;
+}
+
+
 .logo img{
     height: 25px;
+}
+
+.icons i{
+    margin: 0 2px;
 }
 
 /*Main*/
